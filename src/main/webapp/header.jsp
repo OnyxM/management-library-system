@@ -108,8 +108,7 @@
                 <img class="img-fluid" src="dist/images/author1.jpg" alt="">
                 <div class="media-body text-center mt-0 color-primary mt-2">
                         <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false"> 
-                            <h6 class="mb-0 font-weight-bold">Harry Jones</h6>
-                            Toronto, Canada 
+                            <h6 class="mb-0 font-weight-bold">Harry Jones</h6> Toronto, Canada 
                         </a>
                         <div class="dropdown-menu dropdown-menu-right p-0" style="">
                             <a href="#" class="dropdown-item px-2 align-self-center d-flex">
@@ -126,6 +125,8 @@
                 <li class="dropdown active"><a href="app">Dashboard</a>                  
                     <ul>
                         <li class="active"><a href="app"><i class="icon-rocket"></i> Dashboard</a></li>
+                        
+                        <li><a href="app/documents"><i class="icon-user"></i> Gestion des Documents</a></li>
                         
                         <li><a href="app/clients"><i class="icon-user"></i> Gestion des Clients</a></li>
                     </ul>

@@ -27,6 +27,16 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>GestionClientServlet</servlet-name>
-    <url-pattern>/app/gestion-clients</url-pattern>
+    <url-pattern>/app/clients/nouveau</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GestionDocumentServlet</display-name>
+    <servlet-name>GestionDocumentServlet</servlet-name>
+    <servlet-class>com.library_management_system.GestionDocumentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GestionDocumentServlet</servlet-name>
+    <url-pattern>/app/documents/nouveau</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -8,15 +8,15 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class GestionClientServlet
+ * Servlet implementation class GestionDocumentServlet
  */
-public class GestionClientServlet extends HttpServlet {
+public class GestionDocumentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public GestionClientServlet() {
+    public GestionDocumentServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -25,7 +25,7 @@ public class GestionClientServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		this.getServletContext().getRequestDispatcher("/app/clients/nouveau.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/app/documents/nouveau.jsp").forward(request, response);
 	}
 
 	/**

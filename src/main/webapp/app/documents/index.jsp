@@ -7,12 +7,12 @@
                 <div class="row ">
                     <div class="col-9 align-self-center">
                         <div class="sub-header mt-3 py-3 px-3 align-self-center d-sm-flex w-100 rounded">
-                            <div class="w-sm-100 mr-auto"><h4 class="mb-0">Liste des Clients</h4></div>
+                            <div class="w-sm-100 mr-auto"><h4 class="mb-0">Liste des Documents</h4></div>
                         </div>
                     </div>
                     <div class="col-3 align-self-center">
                         <div class="sub-header mt-3 py-3 px-3 align-self-center d-sm-flex w-100 rounded">
-                        	<a href="app/clients/nouveau" class="btn btn-info">Nouveau Client</a>
+                        	<a href="app/documents/nouveau.jsp" class="btn btn-info">Enregistrer un Document</a>
                         </div>
                     </div>
                 </div>
@@ -28,10 +28,10 @@
                                         <thead>
                                             <tr>
                                                 <th>Nom</th>
-                                                <th>Poste</th>
-                                                <th>Adresse</th>
-                                                <th>Numéro CNI</th>
-                                                <th>Date Adhésion</th>
+                                                <th>Sujet</th>
+                                                <th>Edition</th>
+                                                <th>Auteur</th>
+                                                <th>Date Ajout</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
