@@ -22,11 +22,11 @@
                                     <table id="example" class="display table dataTable table-striped table-bordered" >
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
+                                                <th>Nom</th>
+                                                <th>Poste</th>
+                                                <th>Adresse</th>
+                                                <th>Numéro CNI</th>
+                                                <th>Date Adhésion</th>
                                                 <th>Salary</th>
                                             </tr>
                                         </thead>

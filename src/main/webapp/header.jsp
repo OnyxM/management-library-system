@@ -24,7 +24,9 @@
      <!-- END Template CSS-->
 
      <!-- START: Page CSS-->
-     <link rel="stylesheet"  href="dist/vendors/chartjs/Chart.min.css">
+        <link rel="stylesheet" href="dist/vendors/datatable/css/dataTables.bootstrap4.min.css" />
+        <link rel="stylesheet" href="dist/vendors/datatable/buttons/css/buttons.bootstrap4.min.css"/>
+        <link rel="stylesheet"  href="dist/vendors/chartjs/Chart.min.css">
      <!-- END: Page CSS-->
 
      <!-- START: Page CSS-->   
