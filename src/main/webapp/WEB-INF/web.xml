@@ -9,4 +9,24 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AppServlet</display-name>
+    <servlet-name>AppServlet</servlet-name>
+    <servlet-class>com.library_management_system.AppServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppServlet</servlet-name>
+    <url-pattern>/app</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GestionClientServlet</display-name>
+    <servlet-name>GestionClientServlet</servlet-name>
+    <servlet-class>com.library_management_system.GestionClientServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GestionClientServlet</servlet-name>
+    <url-pattern>/app/gestion-clients</url-pattern>
+  </servlet-mapping>
 </web-app>
