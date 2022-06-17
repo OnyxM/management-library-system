@@ -129,6 +129,8 @@
                         <li><a href="app/documents"><i class="icon-user"></i> Gestion des Documents</a></li>
                         
                         <li><a href="app/clients"><i class="icon-user"></i> Gestion des Clients</a></li>
+                        
+                        <li><a href="app/emprunts"><i class="icon-user"></i> Gestion des Emprunts</a></li>
                     </ul>
                 </li>
             </ul>

@@ -39,4 +39,14 @@
     <servlet-name>GestionDocumentServlet</servlet-name>
     <url-pattern>/app/documents/nouveau</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GestionEmpruntServlet</display-name>
+    <servlet-name>GestionEmpruntServlet</servlet-name>
+    <servlet-class>com.library_management_system.GestionEmpruntServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GestionEmpruntServlet</servlet-name>
+    <url-pattern>/app/emprunts/nouveau</url-pattern>
+  </servlet-mapping>
 </web-app>
