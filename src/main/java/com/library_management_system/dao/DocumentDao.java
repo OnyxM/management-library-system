@@ -1,9 +1,9 @@
-package com.libraymanagementsystem.dao;
+package com.library_management_system.dao;
 
 import java.util.List;
 
-import com.librarymanagementsystem.beans.Document;
-import com.librarymanagementsystem.beans.Exemplaire;
+import com.library_management_system.beans.Document;
+import com.library_management_system.beans.Exemplaire;
 
 public interface DocumentDao {
 

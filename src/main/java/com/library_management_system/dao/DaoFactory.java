@@ -1,4 +1,4 @@
-package com.libraymanagementsystem.dao;
+package com.library_management_system.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -23,7 +23,7 @@ public class DaoFactory {
         }
 
         DaoFactory instance = new DaoFactory(
-                "jdbc:mysql://localhost:3306/javaee", "root", "");
+                "jdbc:mysql://localhost:3306/library_management_system", "root", "");
         return instance;
     }
 

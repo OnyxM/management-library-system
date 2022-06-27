@@ -1,8 +1,8 @@
-package com.libraymanagementsystem.dao;
+package com.library_management_system.dao;
 
 import java.util.List;
 
-import com.librarymanagementsystem.beans.Gerant;
+import com.library_management_system.beans.Gerant;
 
 public interface GerantDao {
 

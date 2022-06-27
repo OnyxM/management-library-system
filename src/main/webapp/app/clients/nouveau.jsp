@@ -32,10 +32,18 @@
                                                         <input type="text" class="form-control text-center" id="prenom" placeholder="John" name="prenom" required>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="num_cni">Num CNI</label>
-                                                    <input type="text" class="form-control text-center" id="num_cni" placeholder="123456789" name="num_cni" required>
+                                                
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="num_cni">Num CNI</label>
+                                                        <input type="text" class="form-control text-center" id="num_cni" placeholder="123456789" name="num_cni" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="prenom">Matricule</label>
+                                                        <input type="text" class="form-control text-center" id="matricule" placeholder="21T9517" name="matricule" required>
+                                                    </div>
                                                 </div>
+                                                
                                                 <div class="form-group">
                                                     <label for="inputAddress">Address</label>
                                                     <input type="text" class="form-control text-center" id="inputAddress" placeholder="1234 Main St" name="adresse" required>

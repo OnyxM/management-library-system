@@ -1,9 +1,9 @@
-package com.libraymanagementsystem.dao;
+package com.library_management_system.dao;
 
 import java.util.List;
 
-import com.librarymanagementsystem.beans.Client;
-import com.librarymanagementsystem.beans.Emprunt;
+import com.library_management_system.beans.Client;
+import com.library_management_system.beans.Emprunt;
 
 public interface ClientDao {
 

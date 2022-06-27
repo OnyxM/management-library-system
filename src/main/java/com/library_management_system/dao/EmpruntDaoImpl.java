@@ -1,4 +1,4 @@
-package com.libraymanagementsystem.dao;
+package com.library_management_system.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,9 +8,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.librarymanagementsystem.beans.Client;
-import com.librarymanagementsystem.beans.Emprunt;
-import com.librarymanagementsystem.beans.Exemplaire;
+import com.library_management_system.beans.Client;
+import com.library_management_system.beans.Emprunt;
+import com.library_management_system.beans.Exemplaire;
 
 public class EmpruntDaoImpl implements EmpruntDao{
 

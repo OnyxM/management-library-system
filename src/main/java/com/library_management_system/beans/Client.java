@@ -1,4 +1,4 @@
-package com.librarymanagementsystem.beans;
+package com.library_management_system.beans;
 
 public class Client {
 	private Long id;
