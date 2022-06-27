@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-3 align-self-center">
                         <div class="sub-header mt-3 py-3 px-3 align-self-center d-sm-flex w-100 rounded">
-                        	<a href="app/clients/nouveau" class="btn btn-info">Nouveau Client</a>
+                        	<a href="app/clients/nouveau.jsp" class="btn btn-info">Nouveau Client</a>
                         </div>
                     </div>
                 </div>
