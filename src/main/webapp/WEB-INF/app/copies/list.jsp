@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-3 align-self-center" align="right">
                         <div class="sub-header mt-3 py-3 px-3 align-self-center d-sm-flex w-100 rounded">
-                        	<a href="documents/new" class="btn btn-info">Nouvel exemplaire</a>
+                        	<a href="copies/new" class="btn btn-info">Nouvel exemplaire</a>
                         </div>
                     </div>
                 </div>
@@ -52,9 +52,10 @@
     
 <script src="scripts/copies/list.js"></script>
 <script>
-	let temp = JSON.parse('${jsonExemplairesList}');
 	let temp2 = JSON.parse('${jsonDocumentsList}');
-	syncCopies(temp, temp2);
+	let temp3 = JSON.parse('${jsonCopiesList}');
+	let temp4 = JSON.parse('${jsonLoansList}');
+	syncData(temp2, temp3, temp4);
 </script>
 
 <%@ include file="../footer.jsp" %>

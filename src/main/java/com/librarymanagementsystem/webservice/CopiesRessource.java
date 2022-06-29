@@ -1,5 +1,7 @@
 package com.librarymanagementsystem.webservice;
 
+import java.util.List;
+
 import com.librarymanagementsystem.beans.Exemplaire;
 import com.librarymanagementsystem.dao.DaoFactory;
 import com.librarymanagementsystem.dao.ExemplaireDao;
@@ -55,8 +57,11 @@ public class CopiesRessource {
   @POST
   @Consumes(MediaType.APPLICATION_JSON)
   @Produces({MediaType.APPLICATION_JSON})
-  public Response create(Exemplaire copy) {
-	  exemplaireService.create(copy);
-	  return Response.status(201).entity(copy).build();
+  public Response create(List<Exemplaire> copies) {
+	  for(int i = 0; i < copies.size(); i++)
+	  {
+		  exemplaireService.create(copies.get(i));
+	  }
+	  return Response.status(201).entity(copies).build();
   }
 }

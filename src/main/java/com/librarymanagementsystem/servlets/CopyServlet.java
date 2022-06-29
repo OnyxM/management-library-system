@@ -10,9 +10,11 @@ import java.util.List;
 
 import com.google.gson.Gson;
 import com.librarymanagementsystem.beans.Document;
+import com.librarymanagementsystem.beans.Emprunt;
 import com.librarymanagementsystem.beans.Exemplaire;
 import com.librarymanagementsystem.dao.DaoFactory;
 import com.librarymanagementsystem.dao.DocumentDao;
+import com.librarymanagementsystem.dao.EmpruntDao;
 import com.librarymanagementsystem.dao.ExemplaireDao;
 
 /**
@@ -23,12 +25,15 @@ public class CopyServlet extends HttpServlet {
 	
 	private DocumentDao documentDao;
 	private ExemplaireDao exemplaireDao;
+	private EmpruntDao empruntDao;
+	
 	private Gson gson = new Gson();
 
     public void init() throws ServletException {
         DaoFactory daoFactory = DaoFactory.getInstance();
         this.documentDao = daoFactory.getDocumentDao();
         this.exemplaireDao = daoFactory.getExemplaireDao();
+        this.empruntDao = daoFactory.getEmpruntDao();
     }
        
     /**
@@ -75,15 +80,28 @@ public class CopyServlet extends HttpServlet {
 		List<Exemplaire> copiesList = new ArrayList<Exemplaire>();
 		copiesList = exemplaireDao.findAll();
 		
+		List<Emprunt> loansList = new ArrayList<Emprunt>();
+		loansList = empruntDao.findAll();
+		
 		request.setAttribute("documentsList", documentsList);
 		request.setAttribute("jsonDocumentsList", gson.toJson(documentsList));
 		
 		request.setAttribute("copiesList", copiesList);
 		request.setAttribute("jsonCopiesList", gson.toJson(copiesList));
+		
+		request.setAttribute("loansList", loansList);
+		request.setAttribute("jsonLoansList", gson.toJson(loansList));
 		this.getServletContext().getRequestDispatcher("/WEB-INF/app/copies/list.jsp").forward(request, response);
 	}
 	
 	private void displayNewCopyPage(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		List<Document> documentsList = new ArrayList<Document>();
+		documentsList = documentDao.findAll();
+		
+		request.setAttribute("documentsList", documentsList);
+		request.setAttribute("jsonDocumentsList", gson.toJson(documentsList));
+		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/app/copies/new.jsp").forward(request, response);
 	}
 

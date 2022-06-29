@@ -1,0 +1,18 @@
+.add{
+	width: 120px;
+	display: flex;
+}
+
+.minus, .plus, .count{
+	width: 40px;
+	text-align: center;
+}
+
+#copiesInputs{
+    padding: 12px 16px;
+}
+
+.delte-icon{
+	position: absolute;
+	right: 15px;
+}

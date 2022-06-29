@@ -1,6 +1,6 @@
-function getDisplayDate(date)
+function getDisplayDate(date, showHours = false)
 {
-	return getDayName(date.getDay()) + ", " + date.getDate() + " "+ getMonthName(date.getMonth()) + " "+ date.getFullYear();
+	return getDayName(date.getDay()) + ", " + date.getDate() + " "+ getMonthName(date.getMonth()) + " "+ date.getFullYear() + (showHours ? (" à "+date.getHours() + "h"+date.getMinutes()): "");
 }
 
 function getDayName(dayNumber)

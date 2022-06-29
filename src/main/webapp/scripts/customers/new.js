@@ -51,7 +51,7 @@ function onSubmit()
   let formIsValid = true;
   for(let i = 0; i < addCustomerForm.elements.length; i++)
   {
-    const element = addCustomer.elements[i];
+    const element = addCustomerForm.elements[i];
     if(!element.checkValidity())
     {
       formIsValid = false;

@@ -104,6 +104,31 @@ public class LoanServlet extends HttpServlet {
 	}
 	
 	private void displayNewLoanPage(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		List<Emprunt> loansList = new ArrayList<Emprunt>();
+		loansList = empruntDao.findAll();
+		
+		List<Client> customersList = new ArrayList<Client>();
+		customersList = clientDao.findAll();
+		
+		List<Exemplaire> copiesList = new ArrayList<Exemplaire>();
+		copiesList = exemplaireDao.findAll();
+		
+		List<Document> documentsList = new ArrayList<Document>();
+		documentsList = documentDao.findAll();
+		
+		request.setAttribute("loansList", loansList);
+		request.setAttribute("jsonLoansList", gson.toJson(loansList));
+		
+		request.setAttribute("customersList", customersList);
+		request.setAttribute("jsonCustomersList", gson.toJson(customersList));
+		
+		request.setAttribute("copiesList", copiesList);
+		request.setAttribute("jsonCopiesList", gson.toJson(copiesList));
+		
+		request.setAttribute("documentsList", documentsList);
+		request.setAttribute("jsonDocumentsList", gson.toJson(documentsList));
+		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/app/loans/new.jsp").forward(request, response);
 	}
 
