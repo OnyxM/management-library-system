@@ -4,17 +4,20 @@ public class Exemplaire {
 
 	private Long id;
 	private Long document_id;
-	private String date_ajout;
+	private String code;
+	private Long date_ajout;
 	
-	public Exemplaire(Long id, Long document_id, String date_ajout) {
-		super();
+	public Exemplaire() {}
+	
+	public Exemplaire(Long id, Long document_id, String code, Long date_ajout) {
 		this.id = id;
 		this.document_id = document_id;
+		this.code = code;
 		this.date_ajout = date_ajout;
 	}
-	public Exemplaire(Long document_id, String date_ajout) {
-		super();
+	public Exemplaire(Long document_id, String code, Long date_ajout) {
 		this.document_id = document_id;
+		this.code = code;
 		this.date_ajout = date_ajout;
 	}
 	public Long getId() {
@@ -29,10 +32,16 @@ public class Exemplaire {
 	public void setDocument_id(Long document_id) {
 		this.document_id = document_id;
 	}
-	public String getDate_ajout() {
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public Long getDate_ajout() {
 		return date_ajout;
 	}
-	public void setDate_ajout(String date_ajout) {
+	public void setDate_ajout(Long date_ajout) {
 		this.date_ajout = date_ajout;
 	}
 }

@@ -14,7 +14,7 @@ public class TwiloMessage {
 	private static TwiloMessage instance = null;
 	
 	private static final String ACCOUNT_SID = "AC911c97c68b35cb67ee0584d301056021";
-	private static final String AUTH_TOKEN = "10c98c19462f0f64711fa12d3b31e4bd";
+	private static final String AUTH_TOKEN = "8ad1d1da49039664f9c9266e2110b77c";
 	private static final String PHONE_NUMBER = "+19807345045";
 	
 	private TwiloMessage()

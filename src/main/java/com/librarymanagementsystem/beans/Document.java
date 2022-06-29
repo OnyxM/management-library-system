@@ -7,26 +7,28 @@ public class Document {
 	private String sujet;
 	private String edition;
 	private String auteurs;
-	private String date_ajout;
+	private Long date_ajout;
+	private String image;
 	
+	public Document() {}
 	
-	public Document(Long id, String titre, String sujet, String edition, String auteurs, String date_ajout) {
-		super();
+	public Document(Long id, String titre, String sujet, String edition, String auteurs, Long date_ajout, String image) {
 		this.id = id;
 		this.titre = titre;
 		this.sujet = sujet;
 		this.edition = edition;
 		this.auteurs = auteurs;
 		this.date_ajout = date_ajout;
+		this.image = image;
 	}
 	
-	public Document(String titre, String sujet, String edition, String auteurs, String date_ajout) {
-		super();
+	public Document(String titre, String sujet, String edition, String auteurs, Long date_ajout, String image) {
 		this.titre = titre;
 		this.sujet = sujet;
 		this.edition = edition;
 		this.auteurs = auteurs;
 		this.date_ajout = date_ajout;
+		this.image = image;
 	}
 	public String getTitre() {
 		return titre;
@@ -52,11 +54,17 @@ public class Document {
 	public void setAuteurs(String auteurs) {
 		this.auteurs = auteurs;
 	}
-	public String getDate_ajout() {
+	public Long getDate_ajout() {
 		return date_ajout;
 	}
-	public void setDate_ajout(String date_ajout) {
+	public void setDate_ajout(Long date_ajout) {
 		this.date_ajout = date_ajout;
+	}
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
 	}
 	public Long getId() {
 		return id;

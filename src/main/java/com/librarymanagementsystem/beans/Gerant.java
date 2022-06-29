@@ -6,15 +6,16 @@ public class Gerant {
 	private String noms;
 	private String email;
 	private String mot_de_passe;
+	
+	public Gerant() {}
+	
 	public Gerant(Long id, String noms, String email, String mot_de_passe) {
-		super();
 		this.id = id;
 		this.noms = noms;
 		this.email = email;
 		this.mot_de_passe = mot_de_passe;
 	}
 	public Gerant(String noms, String email, String mot_de_passe) {
-		super();
 		this.noms = noms;
 		this.email = email;
 		this.mot_de_passe = mot_de_passe;
