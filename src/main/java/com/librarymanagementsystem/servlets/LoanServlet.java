@@ -15,6 +15,7 @@ import com.librarymanagementsystem.beans.Emprunt;
 import com.librarymanagementsystem.beans.Exemplaire;
 import com.librarymanagementsystem.dao.EmpruntDao;
 import com.librarymanagementsystem.dao.ExemplaireDao;
+import com.librarymanagementsystem.helpers.TwiloMessage;
 import com.librarymanagementsystem.dao.ClientDao;
 import com.librarymanagementsystem.dao.DaoFactory;
 import com.librarymanagementsystem.dao.DocumentDao;
@@ -113,6 +114,12 @@ public class LoanServlet extends HttpServlet {
 		
 		List<Exemplaire> copiesList = new ArrayList<Exemplaire>();
 		copiesList = exemplaireDao.findAll();
+		
+		TwiloMessage twl = TwiloMessage.getInstance();
+		for(int i = 0; i< customersList.size(); i++)
+		{
+			twl.sendMessage(customersList.get(i).getTelephone(), "Vous avez un emprunt à restituer");
+		}
 		
 		List<Document> documentsList = new ArrayList<Document>();
 		documentsList = documentDao.findAll();

@@ -8,6 +8,7 @@ import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
@@ -45,6 +46,21 @@ public class LoansRessource {
 	  if(deleledRow)
 	  {
 		  return Response.ok().build();
+	  }
+	  else {
+		  return Response.status(400).entity("Emprunt non trouvé avec id = "+id+" !!").build();
+	  }
+	
+  }
+  
+  @PUT
+  @Path("/{id}")
+  @Produces({MediaType.APPLICATION_JSON})
+  public Response updateOne(@PathParam("id") Long id, Emprunt loan) {
+	  boolean updatedRow = empruntService.updateOne(id, loan);
+	  if(updatedRow)
+	  {
+		  return Response.status(201).entity(loan).build();
 	  }
 	  else {
 		  return Response.status(400).entity("Emprunt non trouvé avec id = "+id+" !!").build();

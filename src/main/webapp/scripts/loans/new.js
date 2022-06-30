@@ -72,8 +72,8 @@ function setCopiesListContent(docId)
 
 function onDocumentChange(value)
 {
-	let document = documents.find(elt => elt.id === parseInt(value));
-	documentCoverElt.src = (document?.image && document.image !== "") ? document.image : "public/images/book.jfif";
+	let doc = documents.find(elt => elt.id === parseInt(value));
+	documentCoverElt.src = (doc?.image && doc.image !== "") ? doc.image : "public/images/book.jfif";
 	setCopiesListContent(parseInt(value));
 }
 
